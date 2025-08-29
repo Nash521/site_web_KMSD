@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">KMDS</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="accueil">Home</a></li>
+        <li><a href="profil.html">Profile</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-gradient text-white min-h-screen flex items-center relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="container mx-auto px-6 md:px-12 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              our technical <span class="text-[#006699]">expertise</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+              Cutting-edge expertise in responsible mineral resource extraction
+            </p>
+            <div class="flex space-x-4">
+              <button
+                class="bg-[#006699] hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105"
+              >
+                Our Services
+              </button>
+              <button
+                class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition duration-300"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="assets/images/famille.jpg"
+              alt="Mine à ciel ouvert"
+              class="rounded-xl shadow-2xl border-4 border-[#006699] transform rotate-2 hover:rotate-0 transition duration-500 w-[80%]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+        <a href="#services" class="animate-bounce text-white text-4xl">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Service 1 -->
+    <section id="service1" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div
+            class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 animate__animated animate__fadeInLeft"
+          >
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+              <span class="gradient-text">Air Core </span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Capacity up to 60m depth with tricone bit or hammer drilling
+            </p>
+
+            <button
+              class="interactive-btn bg-[#b38600] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+            >
+              Request a quote
+            </button>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <div class="illustration relative">
+              <img
+                src="assets/images/airecores.jpg"
+                alt="Conception Web"
+                class="w-full max-w-md mx-auto floating rounded-[20px]"
+              />
+              <div
+                class="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-100 rounded-full -z-10"
+              ></div>
+              <div
+                class="absolute -top-10 -right-10 w-24 h-24 bg-blue-100 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 2 -->
+    <section id="service2" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div
+            class="lg:w-1/2 order-2 lg:order-1 animate__animated animate__fadeInLeft"
+          >
+            <div class="illustration relative">
+              <img
+                src="assets/images/services2.jpg"
+                alt="Développement Mobile"
+                class="w-full max-w-md mx-auto floating rounded-[20px]"
+              />
+              <div
+                class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-100 rounded-full -z-10"
+              ></div>
+              <div
+                class="absolute -top-10 -left-10 w-24 h-24 bg-blue-100 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 order-1 lg:order-2 lg:pl-12 mb-12 lg:mb-0 animate__animated animate__fadeInRight"
+          >
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+              <span class="gradient-text">Grade Control(GC)</span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Développez votre présence mobile avec des applications natives et
+              hybrides performantes, conçues pour offrir une expérience
+              utilisateur exceptionnelle.
+            </p>
+
+            <button
+              onclick="showDemoModal()"
+              class="interactive-btn bg-[#b38600] to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+            >
+              Request a quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service 3 -->
+    <section id="service1" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div
+            class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 animate__animated animate__fadeInLeft"
+          >
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+              <span class="gradient-text">
+                Reverse Circulation (RC) Drilling
+              </span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Capacity up to 250m depth with maximum precision
+            </p>
+
+            <button
+              class="interactive-btn bg-[#b38600] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+            >
+              Request a quote
+            </button>
+          </div>
+          <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+            <div class="illustration relative">
+              <img
+                src="assets/images/airecores.jpg"
+                alt="Conception Web"
+                class="w-full max-w-md mx-auto floating rounded-[20px]"
+              />
+              <div
+                class="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-100 rounded-full -z-10"
+              ></div>
+              <div
+                class="absolute -top-10 -right-10 w-24 h-24 bg-blue-100 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 4 -->
+    <section id="service2" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div
+            class="lg:w-1/2 order-2 lg:order-1 animate__animated animate__fadeInLeft"
+          >
+            <div class="illustration relative">
+              <img
+                src="assets/images/services2.jpg"
+                alt="Développement Mobile"
+                class="w-full max-w-md mx-auto floating rounded-[20px]"
+              />
+              <div
+                class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-100 rounded-full -z-10"
+              ></div>
+              <div
+                class="absolute -top-10 -left-10 w-24 h-24 bg-blue-100 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 order-1 lg:order-2 lg:pl-12 mb-12 lg:mb-0 animate__animated animate__fadeInRight"
+          >
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+              <span class="gradient-text">Diamond Drilling (DD)</span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Exceptional recovery rate of 95%, superior sampling quality.
+              Capacity up to 700m depth with maximum precision.
+            </p>
+
+            <button
+              onclick="showDemoModal()"
+              class="interactive-btn bg-[#b38600] to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+            >
+              Request a quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-[#b38600] text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Prêt à collaborer sur votre prochain projet minier?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Notre équipe d'experts est prête à vous accompagner à chaque étape de
+          votre projet.
+        </p>
+        <button
+          class="bg-[#006699] text-[#b38600] hover:bg-gray-100 px-10 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105"
+        >
+          <i class="fas fa-envelope mr-2"></i> Contact Us
+        </button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer pt-16 pb-8">
+      <div class="footer-content container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Colonne 1: Logo et description -->
+          <div>
+            <div class="footer-logo">KMDS</div>
+            <p class="text-gray-300 mb-6">
+              Koura Mining and Drilling Services - Excellence in mining drilling
+              services with innovation and environmental respect
+            </p>
+            <div class="flex">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Colonne 2: Liens rapides -->
+          <div>
+            <h3 class="footer-heading">Liens Rapides</h3>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Accueil
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> À propos
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Services
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Équipements
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Projets
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Contact
+            </a>
+          </div>
+
+          <!-- Colonne 3: Services -->
+          <div>
+            <h3 class="footer-heading">Nos Services</h3>
+            <a href="#" class="footer-link">
+              <i class="fas fa-bolt text-xs"></i> Forage Air Core
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-tachometer-alt text-xs"></i> Grade Control
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-exchange-alt text-xs"></i> Forage RC
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-gem text-xs"></i> Carottage Diamant
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-cogs text-xs"></i> Maintenance
+            </a>
+            <a href="#" class="footer-link">
+              <i class="fas fa-flask text-xs"></i> Analyses
+            </a>
+          </div>
+
+          <!-- Colonne 4: Newsletter -->
+          <div>
+            <h3 class="footer-heading">Newsletter</h3>
+            <p class="text-gray-300 mb-6">
+              Abonnez-vous à notre newsletter pour recevoir nos actualités et
+              offres spéciales.
+            </p>
+            <form class="flex newsletter-form">
+              <input
+                type="email"
+                placeholder="Votre email"
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <hr class="footer-divider" />
+            <div class="mt-6">
+              <h4 class="font-semibold mb-3">Téléchargements</h4>
+              <a href="#" class="footer-link">
+                <i class="fas fa-file-pdf text-xs"></i> Brochure Entreprise
+                (PDF)
+              </a>
+              <a href="#" class="footer-link">
+                <i class="fas fa-file-alt text-xs"></i> Catalogue Services
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Bottom section -->
+        <div
+          class="footer-bottom flex flex-col md:flex-row justify-between items-center pt-6 relative"
+        >
+          <div class="text-gray-300 text-sm mb-4 md:mb-0">
+            &copy; 2023 KMDS - Koura Mining and Drilling Services. Tous droits
+            réservés.
+          </div>
+          <div class="flex flex-wrap justify-center">
+            <a
+              href="#"
+              class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
+              >Mentions légales</a
+            >
+            <span class="text-gray-500">|</span>
+            <a
+              href="#"
+              class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
+              >Politique de confidentialité</a
+            >
+            <span class="text-gray-500">|</span>
+            <a
+              href="#"
+              class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
+              >Conditions d'utilisation</a
+            >
+            <span class="text-gray-500">|</span>
+            <a
+              href="#"
+              class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
+              >Plan du site</a
+            >
+          </div>
+          <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

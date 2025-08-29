@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMDS - Koura Mining and Drilling Services</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              marquee: "marquee 20s linear infinite",
+            },
+            keyframes: {
+              marquee: {
+                "0%": { transform: "translateX(0%)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+      .marquee-container {
+        display: flex;
+        width: 200%;
+        animation: marquee 20s linear infinite;
+      }
+
+      .marquee-container h2 {
+        flex: 0 0 50%;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">KMDS</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="accueil">Home</a></li>
+        <li><a href="profil.html">Profile</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="hero-carousel ">
+      <div class="carousel-container ">
+        <!-- Slide 1 - Air Core -->
+        <div class="carousel-slide active relative h-screen ">
+          <div class="hero-gradient"></div>
+          <img src="assets/images/1.png" alt="Air Core Drilling" class="hidden md:block" />
+          <img src="assets/images/a.png" alt="Air Core Drilling" class="block md:hidden" />
+          <div class="slide-content">
+            <div class="content-wrapper hidden md:block">
+              <h1>Air Core <span>(AC)</span></h1>
+              <p>
+                Capable of drilling up to 60m deep using a hammer drill or a
+                hammer.
+              </p>
+              <div>
+                <a href="#" class="btn btn-primary">Our services</a>
+                <a href="#" class="btn btn-outline">More</a>
+              </div>
+            </div>
+            <!-- content-wrapper mobile -->
+            <div class="block md:hidden absolute bottom-[100px] ml-5 mr-5">
+              <h1>Air Core <span>(AC)</span></h1>
+              <p>
+                Capable of drilling up to 60m deep using a hammer drill or a
+                hammer.
+              </p>
+              <div>
+                <a href="#" class="btn btn-primary">Our services</a>
+                <a href="#" class="btn btn-outline">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Grade Control -->
+        <div class="carousel-slide ">
+          <div class="flex flex-col h-screen relative">
+            <div class="hero-gradient"></div>
+            <img src="assets/images/2.png" alt="Grade Control Drilling" class="hidden md:block" />
+            <img src="assets/images/b.png" alt="Grade Control Drilling" class="block md:hidden"/>
+            <div class="slide-content">
+            <div class="content-wrapper hidden md:block">
+              <h1>Grade Control <span>(GC)</span></h1>
+              <p >
+                Capable of up to 100m depth with maximum precision.
+              </p>
+              <div >
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+            <!-- content-wrapper mobile -->
+            <div class="block md:hidden  mt-[350px] ml-5 mr-5">
+              <h1>Grade Control <span>(GC)</span></h1>
+              <p >
+                Capable of up to 100m depth with maximum precision.
+              </p>
+              <div >
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          
+        </div>
+
+        <!-- Slide 3 - Forage RC -->
+        <div class="carousel-slide ">
+        <div class="flex flex-col h-screen relative">
+            <!-- Background elements -->
+          <div class="hero-gradient "></div>
+          <img
+            src="assets/images/3.png"
+            alt="RC Drilling"
+            class="hidden md:block"
+          />
+          <img
+            src="assets/images/c.png"
+            alt="RC Drilling"
+            class="block md:hidden"          
+          />
+
+          <!-- Content with animations -->
+          <div class="slide-content">
+            <div class="content-wrapper hidden md:block">
+              <h1>
+                Reverse Circulation 
+                <span >Drilling (RC)</span>
+              </h1>
+              <p>
+                Capable of up to 250m depth with maximum precision.
+              </p>
+              <div >
+                <a
+                  href="#"
+                  class="inline-block px-4 py-2 rounded-full font-semibold text-white bg-[#cc9900] hover:bg-[#b38600] transition-all"
+                >
+                  Our Equipment
+                </a>
+              </div>
+            </div>
+            <div class="block md:hidden mt-[350px]" >
+              <h1>
+                Reverse Circulation
+                <span>Drilling (RC)</span>
+              </h1>
+              <p>
+                Capable of up to 250m depth with maximum precision.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Slide 4 - Carottage Diamanté -->
+        <div class="carousel-slide">
+             <div class="flex flex-col h-screen relative">
+              <div class="hero-gradient"></div>
+             <img src="assets/images/4.png" alt="Diamond Drilling" class="hidden md:block" />
+             <img src="assets/images/d.png" alt="Diamond Drilling" class="block md:hidden" />
+             <div class="slide-content w-full">
+              <div class=" content-wrapper hidden md:block">
+             <h1 class="text-2xl font-bold w-full">
+              Carottage <span class="font-normal">Diamanté (DD)</span>
+             </h1>
+             <p class=" max-w-md">
+              Exceptional 95% recovery, capacity up to 700m.
+              </p>
+           <div >
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+               Contact us
+              </a>
+            </div>
+            </div>
+              <div class=" block md:hidden mt-[350px] ml-5 mr-5">
+             <h1 class="text-2xl font-bold w-full">
+              Carottage <span class="font-normal">Diamanté (DD)</span>
+             </h1>
+             <p class=" max-w-md">
+              Exceptional 95% recovery, capacity up to 700m.
+              </p>
+           <div >
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+               Contact us
+              </a>
+            </div>
+            </div>
+
+             </div>
+           </div>
+             </div>
+         </div>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <div class="carousel-indicator active" data-slide="0"></div>
+        <div class="carousel-indicator" data-slide="1"></div>
+        <div class="carousel-indicator" data-slide="2"></div>
+        <div class="carousel-indicator" data-slide="3"></div>
+      </div>
+
+      <!-- Navigation Arrows -->
+     <div >
+       <div class="carousel-arrow prev ">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="carousel-arrow next ">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+     </div>
+    </div>
+    <!-- Bande KMDS -->
+    <div
+      class="kmds-band relative h-[10vh] bg-[#cc9900] flex items-center overflow-hidden"
+    >
+      <div class="w-full overflow-hidden">
+        <div class="animate-marquee whitespace-nowrap">
+          <span class="text-[#006699]  uppercase mr-8"
+            >KOURA MINING AND DRILLING SERVICES •</span
+          >
+          <span class="text-[#006699]  uppercase mr-8"
+            >KOURA MINING AND DRILLING SERVICES •</span
+          >
+          <span class="text-[#006699]  uppercase mr-8"
+            >KOURA MINING AND DRILLING SERVICES •</span
+          >
+          <span class="text-[#006699]  uppercase mr-8"
+            >KOURA MINING AND DRILLING SERVICES •</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Chiffres-clés Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <!-- Titre Section -->
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-[#006699] mb-4 animate-fadeIn"
+          >
+            2.Key Figures
+          </h2>
+          <p
+            class="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeIn animation-delay-100"
+          >
+           Immediate Social Proof of Our Industry Expertise
+          </p>
+        </div>
+
+        <!-- Grille de Stats -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <!-- Bloc 1 - Pays -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slideInUp animation-delay-100 transform hover:-translate-y-2"
+          >
+            <div class="text-[#006699] mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-4xl font-bold text-[#cc9900] mb-2">2</h3>
+            <p class="text-lg font-semibold text-gray-800">
+              Areas of Operation
+            </p>
+          </div>
+
+          <!-- Bloc 2 - Projets -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slideInUp animation-delay-200 transform hover:-translate-y-2"
+          >
+            <div class="text-[#006699] mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </div>
+            <h3 class="text-4xl font-bold text-[#cc9900] mb-2">3</h3>
+            <p class="text-lg font-semibold text-gray-800">
+              Ready-to-Start Projects
+            </p>
+          </div>
+
+          <!-- Bloc 3 - Investissements -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slideInUp animation-delay-300 transform hover:-translate-y-2"
+          >
+            <div class="text-[#006699] mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-4xl font-bold text-[#cc9900] mb-2">€5 Million </h3>
+            <p class="text-lg font-semibold text-gray-800">Invested</p>
+          </div>
+
+          <!-- Bloc 4 - Carottage -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slideInUp animation-delay-400 transform hover:-translate-y-2"
+          >
+            <div class="text-[#006699] mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-4xl font-bold text-[#cc9900] mb-2">~95%</h3>
+            <p class="text-lg font-semibold text-gray-800">
+             Core Recovery
+            </p>
+          </div>
+
+          <!-- Bloc 5 - ISO -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slideInUp animation-delay-500 transform hover:-translate-y-2"
+          >
+            <div class="text-[#006699] mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-4xl font-bold text-[#cc9900] mb-2">ISO</h3>
+            <p class="text-lg font-semibold text-gray-800">Certified Standards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+
+    <section>
+      <div class="max-w-full mx-10">
+        <!-- En-tête de section -->
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold text-[#006699] mb-4">
+            Drilling Solutions
+          </h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Bespoke Drilling for Exploration and Extraction
+          </p>
+        </div>
+
+        <!-- Grille de services -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Carte 1 - Air Core -->
+          <div class="service-card bg-white animate-fade-in-up delay-100">
+            <div class="relative">
+              <div class="service-number">01</div>
+              <div
+                class="service-image bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-mountain text-6xl text-[#006699] opacity-30"
+                ></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800">Air Core (AC)</h3>
+                  <p class="text-gray-500 text-sm">High-Speed, Low-Impact Drilling</p>
+                </div>
+                <div class="icon-container">
+                  <i class="fas fa-bolt text-2xl text-white"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-5">
+                Up to 60m Drilling Depth with Tricone Bit or DTH Hammer for Versatile Applications
+              </p>
+              <a href="#" class="btn-service text-sm"
+                >Découvrir <i class="ml-2 fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Carte 2 - Grade Control -->
+          <div class="service-card bg-white animate-fade-in-up delay-200">
+            <div class="relative">
+              <div class="service-number">02</div>
+              <div
+                class="service-image bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-ruler-combined text-6xl text-[#cc9900] opacity-30"
+                ></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Grade Control (GC)
+                  </h3>
+                  <p class="text-gray-500 text-sm">
+                   Grade Control in Production
+                  </p>
+                </div>
+                <div class="icon-container">
+                  <i class="fas fa-tachometer-alt text-2xl text-white"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-5">
+                Capability of Up to 100m Depth with Maximum Precision
+              </p>
+              <a href="#" class="btn-service text-sm"
+                >Learn More <i class="ml-2 fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Carte 3 - RC -->
+          <div class="service-card bg-white animate-fade-in-up delay-300">
+            <div class="relative">
+              <div class="service-number">03</div>
+              <div
+                class="service-image bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-exchange-alt text-6xl text-[#006699] opacity-30"
+                ></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800">Reverse Circulation Drilling (RC)</h3>
+                  <p class="text-gray-500 text-sm">
+                    Dry Samples for Intermediate Exploration
+                  </p>
+                </div>
+                <div class="icon-container">
+                  <i class="fas fa-filter text-2xl text-white"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-5">
+                Capability of Up to 250m Depth with Maximum Precision
+              </p>
+              <a href="#" class="btn-service text-sm"
+                >Découvrir <i class="ml-2 fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Carte 4 - Carottage Diamanté -->
+          <div class="service-card bg-white animate-fade-in-up delay-400">
+            <div class="relative">
+              <div class="service-number">04</div>
+              <div
+                class="service-image bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center"
+              >
+                <i class="fas fa-gem text-6xl text-[#cc9900] opacity-30"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Diamond Drilling(DD)
+                  </h3>
+                  <p class="text-gray-500 text-sm">Maximum Recovery</p>
+                </div>
+                <div class="icon-container">
+                  <i class="fas fa-diamond text-2xl text-white"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-5">
+               Exceptional Recovery Rate of 95%, Drilling Capability up to 700m Depth
+              </p>
+              <a href="#" class="btn-service text-sm"
+                >Learn More <i class="ml-2 fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </section>
+
+    <!-- Section Équipements & Technologie -->
+    <section
+      class="equipment-tech-section py-12 md:py-16 px-4 md:px-8 bg-gray-50"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- En-tête de section -->
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#006699] mb-4">
+            Équipements & Technologie
+          </h2>
+          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover Our Cutting-Edge Drill Fleet .and Advanced Technologies for Optimal Results
+          </p>
+        </div>
+
+        <!-- Barre de navigation du carrousel -->
+        <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-10">
+          <button class="equip-nav-btn active" data-target="ac">
+            <i class="fas fa-bolt mr-2"></i> PRD Gold RD Rig
+          </button>
+          <button class="equip-nav-btn" data-target="gc">
+            <i class="fas fa-tachometer-alt mr-2"></i> HYDRACORE 2000
+          </button>
+          
+        </div>
+
+        <!-- Carrousel -->
+        <div
+          class="equip-carousel-container bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-xl"
+        >
+          <!-- Slide 1 - Air Core -->
+          <div class="equip-carousel-slide active" id="equip-slide-ac">
+            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 p-6 md:p-8">
+              <!-- Contenu texte -->
+              <div class="flex flex-col justify-center lg:w-1/2">
+                <h3 class="text-2xl md:text-3xl font-bold text-[#006699] mb-4">
+                  PRD Gold RD Rig
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  The PRD Gold RC Rig is a robust and efficient reverse circulation drill rig for surface exploration and recovery.
+                </p>
+
+                <div class="equip-tech-specs">
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-ruler-vertical"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          Traction force
+                        </h4>
+                        <p class="text-gray-600">16000 kgt(35275 Ibt)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          downward pulling force
+                        </h4>
+                        <p class="text-gray-600">
+                          10 880 kgt (23990 Ibt)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          Traction speed
+                        </h4>
+                        <p class="text-gray-600">
+                          39/min
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-cogs"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          Downward pull speed
+                        </h4>
+                        <p class="text-gray-600">
+                          50/min
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 md:mt-8">
+                  <a
+                    href="#"
+                    class="inline-block bg-[#006699] text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-[#004466] transition-all"
+                  >
+                    Request a quote <i class="ml-2 fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="flex items-center justify-center lg:w-1/2">
+                <div
+                  class="equip-image w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px lg:w-[500px] xl:w-[600px]"
+                  style="
+                    background-image: url('assets/images/PRDGold.png');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 - Grade Control -->
+          <div class="equip-carousel-slide" id="equip-slide-gc">
+            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 p-6 md:p-8">
+              <!-- Contenu texte -->
+              <div class="flex flex-col justify-center lg:w-1/2">
+                <h3 class="text-2xl md:text-3xl font-bold text-[#006699] mb-4">
+                  HYDRACORE 2000
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  The Hydracore 2000 is a robust and versatile diamond drill, designed for the most demanding exploration environments.
+                </p>
+
+                <div class="equip-tech-specs">
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-ruler-vertical"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                         Power
+                        </h4>
+                        <p class="text-gray-600">Four Kubota T2 diesel engines delivering a total of 120 HP, controlled by a single centralized lever.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-bullseye"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">Drill Module</h4>
+                        <p class="text-gray-600">
+                          Lightweight aluminum frame with hydraulic mast and 24,000 lb axial pull capacity.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center mb-4">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          Drill Head
+                        </h4>
+                        <p class="text-gray-600">
+                         Hydracore variable-speed head with universal chuck and quick-release swivel system.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="equip-tech-spec">
+                    <div class="flex items-center">
+                      <div class="equip-spec-icon">
+                        <i class="fas fa-chart-line"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800">
+                          Hydraulic Control
+                        </h4>
+                        <p class="text-gray-600">
+                          Foldable panel with direct controls, emergency stop, and 340 L/min flow rat
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 md:mt-8">
+                  <a
+                    href="#"
+                    class="inline-block bg-[#006699] text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-[#004466] transition-all"
+                  >
+                    Request a quote <i class="ml-2 fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="flex items-center justify-center lg:w-1/2">
+                <div
+                  class="equip-image w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px lg:w-[500px] xl:w-[600px]"
+                  style="
+                    background-image: url('assets/images/HC-2000-01.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <!-- Slide 4 - Carottage Diamant -->
+          
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barre de progression -->
+        <div class="equip-progress-bar mt-4 md:mt-6">
+          <div class="equip-progress" id="equip-carousel-progress"></div>
+        </div>
+      </div>
+    </section>
+  
+ <!-- Section d'appel à l'action -->
+        <div class="text-center mt-20 mb-16">
+          <h2 class="text-3xl font-bold text-[#006699] mb-6">
+           Need a custom drilling service?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+           Our team of experts is at your disposal to assess your project and offer the most suitable solution.
+          </p>
+          <a href="#" class="btn-service px-8 py-4 text-lg"
+            >Contact-us <i class="ml-3 fas fa-arrow-right"></i
+          ></a>
+        </div>
+    <!-- Footer -->
+    <footer class="footer pt-16 pb-8">
+        <div class="footer-content container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Colonne 1: Logo et description -->
+                <div>
+                    <div class="footer-logo">KMDS</div>
+                    <p class="text-gray-300 mb-6">Koura Mining and Drilling Services - Excellence dans les services de forage minier avec innovation et respect de l'environnement.</p>
+                    <div class="flex">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2: Liens rapides -->
+                <div>
+                    <h3 class="footer-heading">Liens Rapides</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> Accueil
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> À propos
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> Services
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> Équipements
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> Projets
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-chevron-right text-xs"></i> Contact
+                    </a>
+                </div>
+                
+                <!-- Colonne 3: Services -->
+                <div>
+                    <h3 class="footer-heading">Nos Services</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-bolt text-xs"></i> Forage Air Core
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-tachometer-alt text-xs"></i> Grade Control
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-exchange-alt text-xs"></i> Forage RC
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-gem text-xs"></i> Carottage Diamant
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-cogs text-xs"></i> Maintenance
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-flask text-xs"></i> Analyses
+                    </a>
+                </div>
+                
+                <!-- Colonne 4: Newsletter -->
+                <div>
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="text-gray-300 mb-6">Abonnez-vous à notre newsletter pour recevoir nos actualités et offres spéciales.</p>
+                    <form class="flex newsletter-form">
+                        <input type="email" placeholder="Votre email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <hr class="footer-divider">
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-3">Téléchargements</h4>
+                        <a href="#" class="footer-link">
+                            <i class="fas fa-file-pdf text-xs"></i> Brochure Entreprise (PDF)
+                        </a>
+                        <a href="#" class="footer-link">
+                            <i class="fas fa-file-alt text-xs"></i> Catalogue Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <!-- Bottom section -->
+            <div class="footer-bottom flex flex-col md:flex-row justify-between items-center pt-6 relative">
+                <div class="text-gray-300 text-sm mb-4 md:mb-0">
+                    &copy; 2023 KMDS - Koura Mining and Drilling Services. Tous droits réservés.
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <a href="#" class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition">Mentions légales</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition">Politique de confidentialité</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition">Conditions d'utilisation</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition">Plan du site</a>
+                </div>
+                <a href="#" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="footer.js"></script>
+</body>
+</html>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const prevArrow = document.querySelector('.carousel-arrow.prev');
+            const nextArrow = document.querySelector('.carousel-arrow.next');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Fonction pour animer le contenu d'une slide
+            function animateSlideContent(slide) {
+                slide.classList.add('animating-content');
+                
+                const activeContentElements = slide.querySelectorAll('.slide-content h1, .slide-content p, .slide-content div');
+                activeContentElements.forEach(el => {
+                    el.style.transition = '';
+                    el.style.transform = 'translate(0, 0)';
+                    el.style.opacity = '1';
+                });
+                
+                // Après l'animation du contenu, enlever la classe d'animation
+                setTimeout(() => {
+                    slide.classList.remove('animating-content');
+                }, 600);
+            }
+            
+            // Fonction pour changer de slide
+            function goToSlide(index) {
+                // Réinitialiser toutes les slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active', 'animating-content');
+                    
+                    // Réinitialiser les animations du texte
+                    const contentElements = slide.querySelectorAll('.slide-content h1, .slide-content p, .slide-content div');
+                    contentElements.forEach(el => {
+                        el.style.transition = 'none';
+                        el.style.transform = 'translateX(100px)';
+                        el.style.opacity = '0';
+                    });
+                });
+                
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                // Activer la nouvelle slide
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                
+                // Animer immédiatement le contenu de la première slide
+                if (index === 0) {
+                    // Démarrer l'animation immédiatement pour la première slide
+                    setTimeout(() => {
+                        animateSlideContent(slides[index]);
+                    }, 100);
+                } else {
+                    // Pour les autres slides, attendre 1.5s au lieu de 3s
+                    setTimeout(() => {
+                        animateSlideContent(slides[index]);
+                    }, 1500);
+                }
+                
+                currentSlide = index;
+            }
+            
+            // Fonction pour passer à la slide suivante
+            function nextSlide() {
+                let next = currentSlide + 1;
+                if (next >= slides.length) next = 0;
+                goToSlide(next);
+            }
+            
+            // Fonction pour passer à la slide précédente
+            function prevSlide() {
+                let prev = currentSlide - 1;
+                if (prev < 0) prev = slides.length - 1;
+                goToSlide(prev);
+            }
+            
+            // Configurer les indicateurs
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    clearInterval(slideInterval);
+                    goToSlide(parseInt(this.getAttribute('data-slide')));
+                    startSlideShow();
+                });
+            });
+            
+            // Configurer les flèches
+            prevArrow.addEventListener('click', function() {
+                clearInterval(slideInterval);
+                prevSlide();
+                startSlideShow();
+            });
+            
+            nextArrow.addEventListener('click', function() {
+                clearInterval(slideInterval);
+                nextSlide();
+                startSlideShow();
+            });
+            
+            // Démarrer le défilement automatique
+            function startSlideShow() {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 6000);
+            }
+            
+            // Initialiser le carousel et animer immédiatement la première slide
+            goToSlide(0);
+            startSlideShow();
+        });
+    </script>
+
+    <!-- Section Équipements & Technologie -->
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentSlide = 0;
+    let slideInterval;
+    
+    // Fonction pour animer le contenu d'une slide
+    function animateSlideContent(slide) {
+        slide.classList.add('animating-content');
+        
+        const activeContentElements = slide.querySelectorAll('.slide-content h1, .slide-content p, .slide-content div');
+        activeContentElements.forEach(el => {
+            el.style.transition = '';
+            el.style.transform = 'translate(0, 0)';
+            el.style.opacity = '1';
+        });
+        
+        // Après l'animation du contenu, enlever la classe d'animation
+        setTimeout(() => {
+            slide.classList.remove('animating-content');
+        }, 600); // Réduit de 800ms à 600ms
+    }
+    
+    // Fonction pour changer de slide
+    function goToSlide(index) {
+        // Réinitialiser toutes les slides
+        slides.forEach(slide => {
+            slide.classList.remove('active', 'animating-content');
+            
+            // Réinitialiser les animations du texte
+            const contentElements = slide.querySelectorAll('.slide-content h1, .slide-content p, .slide-content div');
+            contentElements.forEach(el => {
+                el.style.transition = 'none';
+                el.style.transform = 'translateX(100px)';
+                el.style.opacity = '0';
+            });
+        });
+        
+        // Activer la nouvelle slide
+        slides[index].classList.add('active');
+        
+        // Animer immédiatement le contenu de la première slide
+        if (index === 0) {
+            // Démarrer l'animation immédiatement pour la première slide
+            setTimeout(() => {
+                animateSlideContent(slides[index]);
+            }, 100); // Petit délai pour permettre le rendu
+        } else {
+            // Pour les autres slides, attendre 1.5s au lieu de 3s
+            setTimeout(() => {
+                animateSlideContent(slides[index]);
+            }, 1500); // Réduit de 3000ms à 1500ms
+        }
+        
+        currentSlide = index;
+    }
+    
+    // Fonction pour passer à la slide suivante
+    function nextSlide() {
+        let next = currentSlide + 1;
+        if (next >= slides.length) next = 0;
+        goToSlide(next);
+    }
+    
+    // Démarrer le défilement automatique
+    function startSlideShow() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 6000); // Réduit de 8000ms à 6000ms
+    }
+    
+    // Initialiser le carousel et animer immédiatement la première slide
+    goToSlide(0);
+    startSlideShow();
+});
+      </script>
+     <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Sélectionner tous les boutons de navigation
+  const navButtons = document.querySelectorAll('.equip-nav-btn');
+  // Sélectionner toutes les diapositives
+  const slides = document.querySelectorAll('.equip-carousel-slide');
+  
+  // Fonction pour changer de slide
+  function changeSlide(targetId) {
+    // Désactiver toutes les slides
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+    
+    // Activer la slide cible
+    const targetSlide = document.getElementById(`equip-slide-${targetId}`);
+    if (targetSlide) {
+      targetSlide.classList.add('active');
+    }
+    
+    // Mettre à jour les boutons actifs
+    navButtons.forEach(btn => {
+      btn.classList.remove('active');
+      if (btn.getAttribute('data-target') === targetId) {
+        btn.classList.add('active');
+      }
+    });
+  }
+  
+  // Ajouter les écouteurs d'événements aux boutons
+  navButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const target = this.getAttribute('data-target');
+      changeSlide(target);
+    });
+  });
+});
+</script>
+<script>
+        // Sélection des éléments
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+
+        // Gestionnaire d'événement pour le burger
+        burger.addEventListener('click', () => {
+            // Activation/désactivation de la nav
+            nav.classList.toggle('active');
+            
+            // Animation du burger
+            burger.classList.toggle('toggle');
+            
+            // Animation des liens
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        });
+
+        // Fermer le menu en cliquant sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                burger.classList.remove('toggle');
+                
+                // Réinitialiser les animations
+                navLinks.forEach(link => {
+                    link.style.animation = '';
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
