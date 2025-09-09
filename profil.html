@@ -53,11 +53,9 @@
             <p>
               Koura Mining and Drilling Services (KMDS) was established in 2023
               in Mali and in 2024 in Côte d’Ivoire by Ivorian founders. We are
-              specialize in Air Core, Grade Control, and Reverse Circulation
-              drilling for exploration and mining companies focused on gold,
-              copper, lithium, and base metals. We provide diamond drilling with
-              man-portable drill rig upon request. We currently operate drill
-              rigs and aim to expand our portfolio.
+              specialize in Air Core, Grade Control, Diamond Drilling and
+              Reverse Circulation drilling for exploration and mining companies
+              focused on gold, copper, lithium, and base metals.
             </p>
           </div>
           <div class="about-image">
@@ -110,9 +108,7 @@
     <!-- Objectif Section -->
     <section class="business-section">
       <div class="image-container bg-[url('assets/images/image.png')] h-100%">
-        <div class="image-overlay">
-          <h2>Our Vision</h2>
-        </div>
+        <div class="image-overlay"></div>
       </div>
 
       <div class="objectives-container">
@@ -157,7 +153,7 @@
     </section>
 
     <!-- strategy  Section -->
-    <section id="projects" style="background-color: #f9f9f9">
+    <!--  <section id="projects" style="background-color: #f9f9f9">
       <div class="container">
         <div class="section-title">
           <h2>Business Strategy</h2>
@@ -187,7 +183,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Team Section -->
     <section id="team">
@@ -214,7 +210,8 @@
             />
             <h3 class="text-lg font-semibold">Naminata Kramoko</h3>
             <p class="text-sm text-gray-600">
-              Directrice Générale – Koura Mining and Drilling Services
+              Présidente Directrice Générale – Koura Mining and Drilling
+              Services
             </p>
           </div>
 
@@ -226,7 +223,7 @@
             />
             <h3 class="text-lg font-semibold">Arven Konan</h3>
             <p class="text-sm text-gray-600">
-              Responsable HSE – Koura Mining and Drilling Services
+              Directeur HSE – Koura Mining and Drilling Services
             </p>
           </div>
         </div>
@@ -292,8 +289,8 @@
           <div>
             <div class="footer-logo">KMDS</div>
             <p class="text-gray-300 mb-6">
-              Koura Mining and Drilling Services - Excellence dans les services
-              de forage minier avec innovation et respect de l'environnement.
+              Koura Mining and Drilling Services - Excellence in mining drilling
+              services through innovation and environmental responsibility.
             </p>
             <div class="flex">
               <a href="#" class="social-icon">
@@ -314,77 +311,83 @@
           <!-- Colonne 2: Liens rapides -->
           <div>
             <h3 class="footer-heading">Liens Rapides</h3>
-            <a href="#" class="footer-link">
-              <i class="fas fa-chevron-right text-xs"></i> Accueil
+            <a href="index.html" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Home
             </a>
-            <a href="#" class="footer-link">
-              <i class="fas fa-chevron-right text-xs"></i> À propos
+            <a href="profil.html" class="footer-link">
+              <i class="fas fa-chevron-right text-xs"></i> Profil
             </a>
-            <a href="#" class="footer-link">
+            <a href="services.html" class="footer-link">
               <i class="fas fa-chevron-right text-xs"></i> Services
             </a>
-            <a href="#" class="footer-link">
-              <i class="fas fa-chevron-right text-xs"></i> Équipements
-            </a>
-            <a href="#" class="footer-link">
-              <i class="fas fa-chevron-right text-xs"></i> Projets
-            </a>
-            <a href="#" class="footer-link">
+            <a href="contact.html" class="footer-link">
               <i class="fas fa-chevron-right text-xs"></i> Contact
             </a>
           </div>
 
           <!-- Colonne 3: Services -->
           <div>
-            <h3 class="footer-heading">Nos Services</h3>
+            <h3 class="footer-heading">Our Services</h3>
             <a href="#" class="footer-link">
-              <i class="fas fa-bolt text-xs"></i> Forage Air Core
+              <i class="fas fa-bolt text-xs"></i> Air Core
             </a>
             <a href="#" class="footer-link">
               <i class="fas fa-tachometer-alt text-xs"></i> Grade Control
             </a>
             <a href="#" class="footer-link">
-              <i class="fas fa-exchange-alt text-xs"></i> Forage RC
+              <i class="fas fa-exchange-alt text-xs"></i> Reverse Circulation
             </a>
             <a href="#" class="footer-link">
-              <i class="fas fa-gem text-xs"></i> Carottage Diamant
-            </a>
-            <a href="#" class="footer-link">
-              <i class="fas fa-cogs text-xs"></i> Maintenance
-            </a>
-            <a href="#" class="footer-link">
-              <i class="fas fa-flask text-xs"></i> Analyses
+              <i class="fas fa-gem text-xs"></i> Diamond Drilling Man-portable
+              Drilling
             </a>
           </div>
 
           <!-- Colonne 4: Newsletter -->
           <div>
-            <h3 class="footer-heading">Newsletter</h3>
-            <p class="text-gray-300 mb-6">
-              Abonnez-vous à notre newsletter pour recevoir nos actualités et
-              offres spéciales.
+            <h3 class="text-sm font-semibold text-white mb-2">Quick contac</h3>
+            <p class="text-xs text-gray-300 mb-4">
+              A quick message, a quick reply.
             </p>
-            <form class="flex newsletter-form">
+
+            <form
+              action="https://formspree.io/f/your-form-id"
+              method="POST"
+              class="flex flex-col gap-2"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Nom"
+                required
+                class="px-3 py-1.5 text-sm rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-yellow-500"
+              />
+
               <input
                 type="email"
-                placeholder="Votre email"
-                class="newsletter-input"
+                name="email"
+                placeholder="Email"
+                required
+                class="px-3 py-1.5 text-sm rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-yellow-500"
               />
-              <button type="submit" class="newsletter-btn">
-                <i class="fas fa-paper-plane"></i>
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="2"
+                required
+                class="px-3 py-1.5 text-sm rounded bg-gray-800 text-white placeholder-gray-400 resize-none focus:outline-none focus:ring-1 focus:ring-yellow-500"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="flex items-center justify-center gap-1 px-4 py-1.5 text-sm bg-yellow-600 text-white rounded hover:bg-yellow-700 transition"
+              >
+                <i class="fas fa-paper-plane text-xs"></i> Send
               </button>
             </form>
-            <hr class="footer-divider" />
-            <div class="mt-6">
-              <h4 class="font-semibold mb-3">Téléchargements</h4>
-              <a href="#" class="footer-link">
-                <i class="fas fa-file-pdf text-xs"></i> Brochure Entreprise
-                (PDF)
-              </a>
-              <a href="#" class="footer-link">
-                <i class="fas fa-file-alt text-xs"></i> Catalogue Services
-              </a>
-            </div>
+
+            <hr class="mt-4 border-gray-700" />
           </div>
         </div>
 
@@ -395,32 +398,32 @@
           class="footer-bottom flex flex-col md:flex-row justify-between items-center pt-6 relative"
         >
           <div class="text-gray-300 text-sm mb-4 md:mb-0">
-            &copy; 2023 KMDS - Koura Mining and Drilling Services. Tous droits
-            réservés.
+            &copy; 2023 KMDS - Koura Mining and Drilling Services. All rights
+            reserved.
           </div>
           <div class="flex flex-wrap justify-center">
             <a
               href="#"
               class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
-              >Mentions légales</a
+              >Legal notice</a
             >
             <span class="text-gray-500">|</span>
             <a
               href="#"
               class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
-              >Politique de confidentialité</a
+              >Privacy Policy</a
             >
             <span class="text-gray-500">|</span>
             <a
               href="#"
               class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
-              >Conditions d'utilisation</a
+              >Terms of Use</a
             >
             <span class="text-gray-500">|</span>
             <a
               href="#"
               class="text-gray-300 text-sm mx-2 hover:text-[#cc9900] transition"
-              >Plan du site</a
+              >Site map</a
             >
           </div>
           <a href="#" class="back-to-top">
