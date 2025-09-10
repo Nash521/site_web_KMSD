@@ -12,12 +12,17 @@
         theme: {
           extend: {
             animation: {
-              marquee: "marquee 20s linear infinite",
+              marquee: "marquee 10s linear infinite",
+              marqueeMobile: "marqueeMobile 30s linear infinite",
             },
             keyframes: {
               marquee: {
                 "0%": { transform: "translateX(0%)" },
-                "100%": { transform: "translateX(-50%)" },
+                "100%": { transform: "translateX(-25%)" },
+              },
+              marqueeMobile: {
+                "0%": { transform: "translateX(100%)" },
+                "100%": { transform: "translateX(-500%)" },
               },
             },
           },
@@ -161,7 +166,7 @@
     </div>
     <!-- Bande KMDS -->
     <div
-      class="kmds-band relative h-[10vh] bg-[#cc9900] flex items-center overflow-hidden"
+      class="kmds-band hidden md:block relative h-[10vh] bg-[#cc9900] flex items-center overflow-hidden"
     >
       <div class="w-full overflow-hidden">
         <div class="animate-marquee whitespace-nowrap">
@@ -169,13 +174,24 @@
             >KOURA MINING AND DRILLING SERVICES •</span
           >
           <span class="text-[#006699]  uppercase mr-8"
-            >info@kouraminig.com •</span
+            >info@kouramining.com •</span
           >
           <span class="text-[#006699]  uppercase mr-8"
             >KOURA MINING AND DRILLING SERVICES •</span
           >
           <span class="text-[#006699]  uppercase mr-8"
             >info@kouramining.com •</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="kmds-band block w-[100%] md:hidden relative h-[10vh] bg-[#cc9900] flex items-center overflow-hidden"
+    >
+      <div class="w-full overflow-hidden">
+        <div class="animate-marqueeMobile whitespace-nowrap">
+          <span class="text-[#006699]  uppercase mr-8"
+            >KOURA MINING AND DRILLING SERVICES • info@kouramining.com</span
           >
         </div>
       </div>
