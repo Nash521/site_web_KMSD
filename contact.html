@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KMDS</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -417,7 +419,7 @@ Our team of experts is here to support you every step of the way.
   <h3 class="text-sm font-semibold text-white mb-2">Quick contac</h3>
   <p class="text-xs text-gray-300 mb-4">A quick message, a quick reply.</p>
 
-  <form id="contact-form" class="flex flex-col gap-2">
+  <form id="contact-form" method="POST" class="flex flex-col gap-2">
     <input type="text" name="name" placeholder="Nom" required
       class="px-3 py-1.5 text-sm rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-yellow-500" />
     
@@ -432,6 +434,53 @@ Our team of experts is here to support you every step of the way.
       <i class="fas fa-paper-plane text-xs"></i> Send
     </button>
   </form>
+  <!-- SDK EmailJS -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("✅ DOM chargé");
+
+  // Vérif si emailjs est dispo
+  if (typeof emailjs === "undefined") {
+    console.error("❌ emailjs n'est pas défini (SDK pas chargé ?)");
+    return;
+  } else {
+    console.log("✅ emailjs est bien défini :", emailjs);
+  }
+
+  // Init avec ta clé publique
+  try {
+    emailjs.init("ApRDhysm6kfGlBa-6");
+    console.log("✅ emailjs.init exécuté avec ta clé publique");
+  } catch (err) {
+    console.error("❌ Erreur pendant emailjs.init :", err);
+  }
+
+  // Gestion du formulaire
+  const form = document.getElementById("contact-form");
+  if (!form) {
+    console.error("❌ Impossible de trouver le formulaire (#contact-form)");
+    return;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("📨 Formulaire soumis, envoi en cours...");
+
+    emailjs.sendForm("service_4mcmqlj", "template_ifh8orb", form)
+      .then(() => {
+        console.log("✅ Message envoyé avec succès !");
+        alert("Message envoyé avec succès !");
+        form.reset();
+      })
+      .catch(err => {
+        console.error("❌ Erreur pendant l'envoi :", err);
+        alert("Erreur : " + JSON.stringify(err));
+      });
+  });
+});
+</script>
+
 
   <hr class="mt-4 border-gray-700">
 </div>
@@ -461,23 +510,6 @@ Our team of experts is here to support you every step of the way.
         </div>
     </footer>
   </body>
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-  emailjs.init("ApRDhysm6kfGlBa-6");
-
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    emailjs.sendForm('service_4mcmqlj', 'template_ifh8orb', form)
-      .then(() => {
-        alert("✅ Message envoyé !");
-        form.reset();
-      }, (error) => {
-        alert("❌ Erreur : " + JSON.stringify(error));
-      });
-  });
-});
-</script>
   <script>
     // FAQ Toggle functionality
     document.querySelectorAll(".faq-toggle").forEach((button) => {
