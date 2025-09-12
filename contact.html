@@ -408,7 +408,7 @@ Our team of experts is here to support you every step of the way.
   <h3 class="text-sm font-semibold text-white mb-2">Quick contac</h3>
   <p class="text-xs text-gray-300 mb-4">A quick message, a quick reply.</p>
 
-  <form id="contact-form" method="POST" action="#" class="flex flex-col gap-2">
+  <form id="contact-formu" method="POST" action="#" class="flex flex-col gap-2">
     <input type="text" name="name" placeholder="Nom" required
       class="px-3 py-1.5 text-sm rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-yellow-500" />
     
@@ -431,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Vérif si emailjs est dispo
   if (typeof emailjs === "undefined") {
-    console.error("❌ emailjs n'est pas défini (SDK pas chargé ?)");
+    console.error("❌ emailjs n'est pas défini (SDK pas chargé ? Vérifie le <script src=...> dans ton <head>)");
     return;
   } else {
     console.log("✅ emailjs est bien défini :", emailjs);
@@ -439,38 +439,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Init avec ta clé publique
   try {
-    emailjs.init({
-  publicKey: "ApRDhysm6kfGlBa-6",
-});
-
+    emailjs.init({ publicKey: "ApRDhysm6kfGlBa-6" });
     console.log("✅ emailjs.init exécuté avec ta clé publique");
   } catch (err) {
     console.error("❌ Erreur pendant emailjs.init :", err);
-  }
-
-  // Gestion du formulaire
-  const form = document.getElementById("contact-form");
-  if (!form) {
-    console.error("❌ Impossible de trouver le formulaire (#contact-form)");
     return;
   }
 
+  // Vérifier si le form existe
+  const form = document.getElementById("contact-formu");
+  if (!form) {
+    console.error("❌ Impossible de trouver le formulaire (#contact-formu)");
+    return;
+  } else {
+    console.log("✅ Formulaire trouvé (#contact-formu)", form);
+  }
+
+  // Ajout listener
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     console.log("📨 Formulaire soumis, envoi en cours...");
 
-    emailjs.sendForm("service_4mcmqlj", "template_ifh8orb", form)
-      .then(() => {
-        console.log("✅ Message envoyé avec succès !");
-        alert("Message envoyé avec succès !");
-        form.reset();
-      })
-      .catch(err => {
-        console.error("❌ Erreur pendant l'envoi :", err);
-        alert("Erreur : " + JSON.stringify(err));
-      });
+    // Vérif contenu des champs avant envoi
+    const formData = new FormData(form);
+    console.log("📋 Données collectées :", Object.fromEntries(formData.entries()));
+
+    // Vérif services et template
+    const serviceID = "service_4mcmqlj";
+    const templateID = "template_ifh8orb";
+    console.log(`🔎 ServiceID: ${serviceID}, TemplateID: ${templateID}`);
+
+    if (!serviceID || !templateID) {
+      console.error("❌ ServiceID ou TemplateID manquant !");
+      return;
+    }
+
+    // Tentative d'envoi
+    try {
+      emailjs.sendForm(serviceID, templateID, form)
+        .then((res) => {
+          console.log("✅ Message envoyé avec succès :", res);
+          alert("Message envoyé avec succès !");
+          form.reset();
+        })
+        .catch((err) => {
+          console.error("❌ Erreur pendant l'envoi :", err);
+          alert("Erreur (voir console) : " + JSON.stringify(err));
+        });
+    } catch (err) {
+      console.error("💥 Exception bloquante dans sendForm :", err);
+    }
   });
 });
+</script>
+
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 
 
@@ -501,9 +525,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </footer>
-     <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
   </body>
   <script>
     // FAQ Toggle functionality
